@@ -42,7 +42,6 @@ namespace AmazingForecast.CrossPlatformApp.Views
             ImageIcon.Source = ImageSource.FromResource($"mob{currentWeather.data.icon}.png");
             //if (Device.RuntimePlatform == Device.Android)
             //ImageIcon.Source = ImageSource.FromFile($"mob{currentWeather.data.icon}.png");
-
         }
 
         private void DisplayForecastWeather()
