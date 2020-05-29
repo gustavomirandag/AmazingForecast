@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AmazingForecast.CrossPlatformApp.Views.MainPage">
+
+    <ContentPage.Resources>
+        <StyleSheetExtension Source="/Styles/MainPageStyle.css"/>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" Padding="10">
+            <StackLayout VerticalOptions="StartAndExpand">
+                <Label x:Name="LabelState" Text="Rio de Janeiro" HorizontalOptions="StartAndExpand" />
+                <Label x:Name="LabelCountry"  Text="Brasil" HorizontalOptions="StartAndExpand" />
+                <StackLayout x:Name="StackLayoutCurrentDay" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                    <StackLayout x:Name="StackLayoutCurrentDayData" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+                        <Label x:Name="LabelTemperature"  Text="23º" />
+                        <Label x:Name="LabelHumidity"  Text="60%" />
+                        <Label x:Name="LabelDate" Text="28/05/2020" />
+                    </StackLayout>
+                    <Image x:Name="ImageIcon" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" Source="Images/mob1n.png" />
+                </StackLayout>
+                <StackLayout x:Name="StackLayoutNextDays" Spacing="10">
+                    
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
